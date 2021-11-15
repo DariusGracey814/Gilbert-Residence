@@ -286,12 +286,12 @@ img {
 
 #walkImg {
   max-width: 100%;
-  min-height: 575px;
+  min-height: 568px;
 }
 
 #thumbsUpImg {
   max-width: 100%;
-  min-height: 515px;
+  min-height: 30px;
 }
 
 #gilbert__Facility {
