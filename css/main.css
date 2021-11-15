@@ -281,22 +281,22 @@ img {
 
 #smileImg {
   max-width: 1280px;
-  min-height: 472px;
+  height: 539px;
 }
 
 #walkImg {
   max-width: 100%;
-  min-height: 568px;
+  height: 539px;
 }
 
 #thumbsUpImg {
   max-width: 100%;
-  min-height: 568px;
+  height: 539px;
 }
 
 #gilbert__Facility {
   max-width: 100%;
-  min-height: 568px;
+  height: 539px;
 }
 
 .historical__h2 {
