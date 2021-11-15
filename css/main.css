@@ -931,7 +931,7 @@ img {
 
 .parallax {
   position: relative;
-  background: url("./g-img/holdingHands.webp") no-repeat center;
+  background: url("/g-img/holdingHands.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
@@ -939,14 +939,14 @@ img {
 
 .parallax2 {
   position: relative;
-  background: url("./g-img/library.webp") no-repeat top;
+  background: url("/g-img/library.webp") no-repeat top;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
 }
 .parallax3 {
   position: relative;
-  background: url("./g-img/bingo.webp") no-repeat bottom;
+  background: url("/g-img/bingo.webp") no-repeat bottom;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
@@ -954,7 +954,7 @@ img {
 
 .parallax4 {
   position: relative;
-  background: url("./g-img/holdingHands.webp") no-repeat center;
+  background: url("/g-img/holdingHands.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
