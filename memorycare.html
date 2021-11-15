@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Each resident will have a strength based service plan developed that is tailored to their individual abilities and challenges while striving to most closely replicate their prior lifestyle, interests, familiarities and routines. Family members and authorized representatives play a vital and cooperative role with staff in the creation of this plan. " />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <title>Memory Care &#8211 The Gilbert Residence</title>
+        <link rel="shortcut icon" href="./g-img/favicon-16x16.png" type="image/png" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+
+    <body>
+        <header id="masthead">
+            <!-- Coronavirus Banner -->
+            <div aria-label="learn how gilbert Residence is keeping clients safe amid the COVID-19 pandemic" class="py-3" id="corona__saftey" role="banner">
+               <div class="container-xl px-5">
+                <p class="banner__text text-center">
+                    During this COVID-19 pandemic, The Gilbert Residence and our Staff top priority is protecting the most vulnerable population during this period of uncertainty.
+                    <a href="./html/corona.html" class="banner__link">Learn more about how the Gilbert Residence is keeping clients safe amid the COVID-19 pandemic</a>
+                </p>
+                <i class="bi bi-x close--btn" id="close"></i>
+               </div>
+            </div>
+
+            <!-- Top Accent Navigation-->
+            <div aria-label="Top Accent Navigation" id="accentTop__Navigation" class="navbar navbar-expand-lg accent__clr navbar-dark py-2" role="navigation">
+                <div class="container-xl">
+                    <div class="accentContact_Wrap px-1">
+                        <div class="contact__col d-flex justify-content-between align-items-center">
+                            <div class="contact__Element">
+                                <a href="tel:+7344829498" class="text-white accentContact__links me-4">
+                                    <i class="bi bi-phone text-white me-1"></i>
+                                    Schedule a Tour
+                                </a>
+            
+                                <a href="mailto:info@gilbertresidence.com " class="text-white accentContact__links">
+                                    <span class="contact__message">Email us: </span>
+                                    <i class="bi bi-envelope text-white me-1"></i>
+                                    info@gilbertresidence.com
+                                </a>
+                            </div>
+                            <!-- Social Media -->
+                            <div class="contact__Element socialLink__list">
+                                <div>
+                                    <span class="text-white ms-4">Follow us @:</span>
+                                </div>
+                                <div>
+                                    <a aria-label="Gilbert Residence facebook link" href="#" tabindex="0">
+                                        <i class="bi bi-facebook text-white fs-5 ms-5 social__link" title="Facebook"></i>
+                                    </a>
+                                    <a aria-label="Gilbert Residence twitter link" href="#" tabindex="0">
+                                        <i class="bi bi-twitter text-white fs-5 ms-3 social__link" title="Twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Navigation -->
+            <nav aria-label="Primary Navigation" id="primary__Navigation" class="navbar navbar-expand-lg navbar-dark">
+
+                <div class="container-xl ">
+                    <a aria-label="Gilbert Residence Logo" href="./index.html" class="navbar-brand">
+                        <img src="./g-img/gilbert__logo.png" alt="gilbert residence logo" class="topNavigation__Logo" >
+                    </a>
+
+                    <!-- Toggle Menu -->
+                    <button id="toggle__style" class="toggle__menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-labelledby="toggleMenu">
+                        <span><i class="bi bi-list toggleMenu-icon text-white fs-1 border-0"></i></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 class="offCanvas__h3" id="offcanvasRightLabel">Gilbert Residence</h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link hover__state">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">About us</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Drop Down Menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./index.html">Our History</a></li>
+                                        <li><a class="dropdown-item" href="./index.html">Our Mission and Vision</a></li>
+                                        <li><a class="dropdown-item" href="./team.html">Meet the Team</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Our Services</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#offered__services">What we Offer</a></li>
+                                        <li><a class="dropdown-item" href="./assisted.html">Assisted Living Care</a></li>
+                                        <li><a class="dropdown-item" href="./memorycare.html">Memory Care</a></li>
+                                        <li><a class="dropdown-item" href="./nursing.html">Nursing Care</a></li>
+                                        <li><a class="dropdown-item" href="./servicesAmenities.html">Services & Amenities</a></li>
+                                        <li><a class="dropdown-item" href="./activities.html">Activities</a></li>
+                                    </ul>
+                                </li>
+                                
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Gallery</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./photogallery.html">Picture Gallery</a></li>
+                                        <li><a class="dropdown-item" href="./index.html">Video Tour</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Contact us</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./contact.html">Request Information</a></li>
+                                        <li><a class="dropdown-item" href="https://gilbertresidence.iapplicants.com/" rel="noopener"target="_blank">Careers</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a aria-label="Search " href="#" role="search" class="nav-link hover__state">
+                                        Search 
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="https://www.paypal.com/donate?token=Lu1XF0szm2p540j85sbePRD5eZYQb8T47vD2JeLJGilHsLtq8LjfBxjbrlI1_QjMgbUi4fXMp33Qd0av" id="donation--btn-id" class="nav-link btn btn-md donation-btn mt-sm-2 mt-lg-0" target="_blank">Donations</a>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb" class="breadcrumb__Nav pt-2">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="./index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Memory Care</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- Memory Care Community Section -->
+        <section aria-label="Gilbert residence assisted living community" id="assistedLiving" class="memoryCare__Section">
+            <div class="container-xl">
+                <div class="parallax">
+                    <h1 class="parallax__heading">Memory Care Community</h1>
+                </div>
+                
+                <!-- Memory Care Content -->
+                <div class="assistedLiving__Wrap">
+                    <!-- Floor plan images -->
+                    <div class="floor__Plan memoryCare__Floor">
+                        <div class="blueprint__text">
+                            <h2 class="blueprint__h2">Promoting lively, fun and meaningful moments while honoring choice are what really matter.</h2>
+                            <div class="memoryCare__text">
+                                <div class="memoryCare__Element">
+                                    <p class="para">
+                                        Each resident will have a strength based service plan developed that is tailored to their individual abilities and challenges while striving to most closely replicate their prior lifestyle, interests, familiarities and routines. Family members and authorized representatives play a vital and cooperative role with staff in the creation of this plan.
+                                    </p>
+                                    <p class="para">
+                                        We believe that a stable, friendly, relatively simple environment, placing few demands on the resident will tend to minimize the likelihood of associated challenging behaviors often caused by rigid approaches to meet the demands of a dictating clock or by the environment itself. We must support residents where they are cognitively instead of forcing them into our reality, placing unrealistic expectations upon them. Consistency and flexibility are both critical to balanced activities of daily living.
+                                    </p>
+                                </div>
+                                <div class="memoryCare__Element">
+                                    <p class="para">
+                                        Grace Hall is a fully alarmed, secured and safe environment with an enclosed outside patio Psychosocial well-being, peer support and communication are essential for loved ones and caregivers. The family is an integral part of the care giving team and works closely with the staff as well as receives educational, emotional support and assistance during visits.
+                                    </p>
+                                    <p class="para">
+                                        Grace Hall fosters a spirit where friendships and loving relationships are freely formed by all whom are connected. These relationships create a special environment which gives Grace Hall the family feel. Humor is a necessary ingredient to managing the associated stressors for residents, families and staff. Promoting lively, fun and meaningful moments while honoring choice are what really matter.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="blueprint memoryCare">
+                                <div class="blueprintImage__Wrap">
+                                    <p class="standard__title">Standard Room</p>
+                                    <img class="standard__Image" src="./g-img/room_plan_1.webp" alt="blueprint of the standard room at the gilbert residence" />
+                                </div>
+    
+                                <div class="blueprintImage__Wrap">
+                                    <p class="bay__title">The Bay</p>
+                                    <img class="bay__Image" src="./g-img/room_plan_bay.webp" alt="blueprint of the bay room at the gilbert residence" />
+                                </div>
+                            </div>
+
+                            <div class="graceHall__Fact">
+                                <h2 class="gracehallFact__h2">Grace Hall Fact Sheet</h2>
+                                <p class="gracehallFact__text">
+                                    In 1991 Stella Hammond, RN, gave a tremendous gift of one million dollars to the Gilbert Residence. Her kind heart and devotion to serving those who could not care for themselves was at the foundation for her being. Through her dedication and service to the local community, Stella left a mark on everyone she served. 2006 saw the creation of Grace Hall to serve residents suffering from Alzheimer’s Disease and other forms of dementia. In September of 2010, the Gilbert Residence honored Stella’s devotion and commitment by dedicating Grace Hall in her memory.
+                                </p>
+                            </div>
+
+                            <div class="list__Wrap">
+                                <ul class="list__1">
+                                    <li class="list__Heading"><h3 class="memoryCare__h3">Memory Care Services</h3></li>
+                                    <li class="list1__item">Three mails per day</li>
+                                    <li class="list1__item">Snacks and assorted beverages throughout the day</li>
+                                    <li class="list1__item">Medication administration</li>
+                                    <li class="list1__item">Trained staff available 24 hours per day</li>
+                                    <li class="list1__item">Nightly rounds catered to personal care needs</li>
+                                    <li class="list1__item">Bathing and dressing assistance</li>
+                                    <li class="list1__item">Weekly housekeeping</li>
+                                    <li class="list1__item">Personal laundry and linen service</li>
+                                    <li class="list1__item">Beds made daily</li>
+                                    <li class="list1__item">Activities 7 days per week</li>
+                                </ul>
+                                
+                                <ul class="list__2">
+                                    <li class="list2__item">Assistance to all activities and meals</li>
+                                    <li class="list2__item">Emergency call system</li>
+                                    <li class="list2__item">All utilities except telephone</li>
+                                    <li class="list2__item">Satellite television (Television not provided)</li>
+                                    <li class="list2__item">Safety bars and shower bench in all bathrooms</li>
+                                    <li class="list2__item">Maintenance of rooms, grounds and landscaping</li>
+                                    <li class="list2__item">Trash pick-up</li>
+                                    <li class="list2__item">Fire suppression system</li>
+                                    <li class="list2__item">Full service beauty/barber shop (additional fee)</li>
+                                    <li class="list2__item">Wireless internet</li>
+                                </ul>
+                            </div>
+
+                            <div class="bottomList__Wrap">
+                                <ul class="list__3">
+                                    <li class="list__Heading3">
+                                        <h3 class="list3__h3">Goals of Grace Hall</h3>
+                                    </li>
+                                    <li class="list3__item">Safety and security</li>
+                                    <li class="list3__item">Support functional ability through meaningful daily activities</li>
+                                    <li class="list3__item">Maximize well-being and awareness</li>
+                                    <li class="list3__item">Provide on-going opportunities for stimulation</li>
+                                    <li class="list3__item">Maximize autonomy and control</li>
+                                    <li class="list3__item">Adapt to changing needs</li>
+                                    <li class="list3__item">Establish links to the healthy and familiar</li>
+                                    <li class="list3__item">Provide daily opportunities for socialization</li>
+                                    <li class="list3__item">Protect need for privacy and dignity</li>
+                                </ul>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="Footer" class="noFooter__Margin">
+            <div class="mainFooter">
+                <a aria-label="gilbert residence footer logo" href="./index.html" id="footer__logo"></a>
+                <div class="footer__wrap">
+                    <nav aria-label="footer navigation" id="footer__nav">
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Our Family Care Services</h1>
+                            <li class="footerNav__item">
+                                <a href="./memorycare.html" class="footerNav__link">Memory Care</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./nursing.html" class="footerNav__link">Nursing Care</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./assisted.html" class="footerNav__link">Assisted Living Care</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Helpful Resources</h1>
+                            <li class="footerNav__item">
+                                <a href="https://gilbertresidence.iapplicants.com/" class="footerNav__link" rel="noopener" target="_blank" title="Careers">Careers</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./privacy.html" class="footerNav__link">Privacy Policy</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Site Links</h1>
+                            <li class="footerNav__item">
+                                <a href="./servicesAmenities.html" class="footerNav__link">Services & Amenities</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./activities.html" class="footerNav__link">Activities</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footerContent_1">
+                        <h1 class="text-white footer__heading">Non-Discrimination Policy</h1>
+                        <p class="text-white">
+                            The Gilbert Residence complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age,    disability, sex, and protected veteran status.
+                        </p>
+                        <p class="text-white" role="contentinfo">
+                            © 2021 The Gilbert Residence Health System, Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                    
+                    <!-- Scroll Button -->
+                    <button aria-label="scroll up" type="button" class="scrollUp">
+                        <i class="bi bi-arrow-up-circle-fill scrollUp"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,1610 @@
+:root {
+  /* Colors */
+  --primary-clr-100: hsl(0, 0%, 90%);
+  --accent-clr-200: #f2f2f2;
+  --accent-clr-300: #d9d9d9;
+  --accent-clr-900: #222;
+  --primary-clr-300: #90acbc;
+  --primary-clr-500: #1c72a0;
+  --focus-clr: hsl(240, 90%, 50%);
+  --primary-clr-700: #f8bf13;
+  --primary-clr-900: #000000;
+
+  /* Fonts */
+  --primary-ff: "Lato", sans-serif;
+  --secondary-ff: "Merriweather", serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem/1.5 var(--primary-ff);
+  background-color: hsl(0, 0%, 96%);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#masthead {
+  width: 100%;
+}
+
+/* ======== Top Navigation ======== */
+
+/* === Accessible Focus === */
+
+/* === Corona Banner === */
+#corona__saftey {
+  position: relative;
+  background-color: var(--primary-clr-700);
+}
+
+.banner__text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.banner__link {
+  color: var(--primary-clr-500);
+  margin-left: 0.2em;
+}
+.contact__message {
+  color: var(--primary-clr-100);
+  font-family: var(--secondary-ff);
+  font-size: 0.85rem;
+}
+
+/* === Accent Navigation === */
+.accent__clr {
+  background: rgba(0, 0, 0, 0.2)
+    linear-gradient(
+      to right,
+      var(--primary-clr-300),
+      var(--primary-clr-500),
+      var(--primary-clr-300)
+    );
+  background-blend-mode: overlay;
+}
+
+.nursing__link {
+  text-decoration: none;
+}
+
+#accentTop__Navigation {
+  border-bottom: 1px solid var(--primary-clr-100);
+}
+
+.accentContact_Wrap {
+  width: 100%;
+}
+
+.contact__col {
+  width: 100%;
+}
+
+/* Icon */
+.bi-x {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  font-size: 1.5rem;
+  color: var(--primary-clr-900);
+  cursor: pointer;
+}
+
+.social__link:hover {
+  color: lightskyblue !important;
+}
+
+.socialLink__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bi-search {
+  margin-left: 0.2em;
+}
+
+#toggle__style {
+  border: none !important;
+  background-color: transparent !important;
+  border-radius: 10%;
+}
+
+.bi-list:focus,
+.bi-list:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.bi-award {
+  font-size: 3rem;
+  color: var(--primary-clr-700) !important;
+}
+
+.bi-star-fill {
+  color: var(--primary-clr-700) !important;
+  text-align: center;
+}
+
+/* ==== Primary Navigation ==== */
+#primary__Navigation {
+  padding: 0.6rem 0;
+  background: linear-gradient(
+    to right,
+    var(--primary-clr-500),
+    var(--primary-clr-300)
+  );
+}
+
+.navbar-nav {
+  margin-left: 4rem;
+  padding: 0.2rem 1rem;
+}
+
+.topNavigation__Logo {
+  max-width: 165px;
+  min-height: 80px;
+}
+
+#logo_image {
+  margin-top: -1rem;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  font-family: var(--secondary-ff) !important;
+  color: var(--primary-clr-900) !important;
+}
+
+.dropdown__icon {
+  color: var(--primary-clr-900) !important;
+  font-size: 1.2rem;
+}
+
+/* === Breadcrumbs === */
+
+/* Navigation Dropdown */
+.dropdown-menu {
+  position: absolute;
+}
+
+.dropdown__link {
+  font-family: var(--secondary-ff) !important;
+  color: var(--primary-clr-900) !important;
+  text-decoration: none;
+}
+
+.hover__state:hover {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid var(--primary-clr-100);
+  transition: all 100ms ease-in;
+}
+
+.hover__state:focus {
+  padding-bottom: 0.1em;
+  border-bottom: none;
+  transition: all 300ms ease-in;
+  color: var(--focus-clr) !important;
+}
+
+#logo__image {
+  width: 100%;
+}
+
+.offCanvas__h3 {
+  font-family: var(--secondary-ff);
+  color: var(--primary-clr-500);
+}
+
+/* == Button == */
+.donation-btn {
+  border-radius: 2rem;
+  background: var(--primary-clr-500);
+  margin-left: 1rem;
+  padding-inline: 0.8rem !important;
+  box-shadow: 0 0 0.17em var(--primary-clr-900);
+}
+
+.donation-btn:hover {
+  background: hsl(201, 91%, 41%);
+}
+
+.donation-btn:focus {
+  box-shadow: none;
+}
+
+.service-btn {
+  background: var(--primary-clr-500);
+  color: var(--primary-clr-100);
+  width: 200px;
+  margin: 0 auto;
+}
+
+.service-btn:focus {
+  box-shadow: none;
+}
+
+.service-btn:hover {
+  background: hsl(201, 91%, 41%);
+  color: var(--primary-clr-100);
+}
+
+.offeredServices-btn {
+  background: var(--primary-clr-500);
+  color: var(--primary-clr-100);
+}
+
+.offeredServices-btn:hover {
+  background: hsl(201, 91%, 41%);
+  color: var(--primary-clr-100);
+}
+
+.offeredServices-btn:focus {
+  box-shadow: none;
+  outline: 2px dotted black;
+  margin: 0.5rem;
+}
+
+/* ===== Hero Carousal ===== */
+#hero__Hdr {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#hero_heading {
+  font-family: var(--secondary-ff);
+  letter-spacing: 2px;
+  color: var(--primary-clr-500);
+  text-shadow: 0 0 0.05em var(--primary-clr-300);
+}
+
+#carouselExampleControls {
+  width: 55%;
+}
+
+#smileImg {
+  display: block;
+  background: url("./g-img/smiling.webp") no-repeat center;
+  background-size: cover;
+  max-width: 1280px;
+  min-height: 529px;
+}
+
+#walkImg {
+  display: block;
+  background: url("./g-img/inside.webp") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 529px;
+}
+
+#thumbsUpImg {
+  display: block;
+  background: url("./g-img/thumbsup.webp") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 529px;
+}
+
+#gilbert__Facility {
+  max-width: 100%;
+  height: 33.05rem;
+}
+
+.historical__h2 {
+  font-family: var(--primary-ff);
+  background-color: var(--primary-clr-500);
+  padding-top: 0.6rem;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: var(--primary-clr-100);
+}
+
+/* === Our Awards === */
+.awards {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 3rem;
+}
+
+#awards__heading {
+  font-family: var(--secondary-ff);
+  margin: 6.5rem 0 2rem;
+}
+
+.awards__item {
+  font-size: 1.2rem;
+}
+
+.videoTour {
+  box-shadow: 0 0 0.4em var(--primary-clr-900);
+}
+
+.videoTour__clr {
+  color: var(--primary-clr-500);
+}
+
+/* === Services Gilbert Residence Offer === */
+#offered__services {
+  width: 100%;
+  padding: 3em 0;
+  background-color: var(--primary-clr-500);
+}
+
+.offerServices__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offeredService__card {
+  width: 31% !important;
+  min-height: 250px !important;
+  box-shadow: 5px 8px 1em #333;
+}
+
+.offeredService__card:hover,
+.offeredService__card:focus,
+.service-btn:focus {
+  outline: 2px dotted var(--primary-clr-900);
+}
+
+.offeredServicesCard__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#servicesHeading {
+  font-family: var(--secondary-ff);
+  text-transform: capitalize;
+  color: var(--primary-clr-100);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.offeredServiceCard__text {
+  max-width: 300px;
+  padding-top: 1em;
+}
+
+/* ====== Mission, Vision, and Video Tour Section ====== */
+#missionAbout__section {
+  width: 100%;
+  padding: 6rem 0;
+  background: var(--accent-clr-300);
+}
+
+.missionAbout__Wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission--col {
+  background: var(--primary-clr-500);
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  box-shadow: 5px 8px 0.6em #444;
+}
+
+.aboutUs__col {
+  max-width: 43%;
+  margin-left: 2rem;
+}
+
+.missionContent {
+  background: var(--accent-clr-200);
+  padding: 2em;
+}
+
+.contactUs-btn {
+  background: var(--primary-clr-500);
+  color: var(--primary-clr-100);
+}
+
+.contactUs-btn:hover {
+  color: var(--primary-clr-100);
+  background-color: hsl(201, 91%, 41%);
+}
+
+.contactUs-btn:focus {
+  box-shadow: none;
+  outline: 2px dotted var(--primary-clr-900) !important;
+}
+
+.missionAbout___dash {
+  width: 4rem;
+  height: 0.15rem;
+  margin-bottom: 0.5rem;
+  background: var(--primary-clr-500);
+}
+
+.missionAbout___h2,
+.missionAbout__h4 {
+  font-family: var(--primary-ff);
+  color: var(--primary-clr-500);
+}
+
+.missionAbout___h2 {
+  margin-bottom: 2.5rem;
+}
+
+.mission__h2,
+.mission__h4,
+.mission__text {
+  color: var(--primary-clr-500);
+}
+
+.mission__h2 {
+  margin-bottom: 2.5rem;
+}
+
+/* === Video Tour Section === */
+#videoTour__section {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.video__Container {
+  max-width: 1300px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+#videoTour {
+  width: 640px;
+  height: 360px;
+}
+
+.svg__Accessible {
+  height: 0;
+  width: 0;
+  font-size: 0;
+}
+
+.tour__Wrap {
+  display: flex;
+}
+
+.videoCol__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  width: 100%;
+}
+.videoTour__h2 {
+  font-family: var(--secondary-ff);
+  margin: 1rem 0 4rem;
+}
+
+.videoTour__h3 {
+  font-family: var(--secondary-ff);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.videoTour__h4 {
+  text-align: center;
+}
+
+.videoTour___text {
+  line-height: 1.7;
+  margin: 1rem 0 2rem;
+  text-align: center;
+  max-width: 450px;
+}
+
+.payment-btn {
+  background: var(--primary-clr-500);
+  color: var(--primary-clr-100);
+  margin: 0 auto;
+}
+
+.payment-btn:hover {
+  color: var(--primary-clr-100);
+  background-color: hsl(201, 91%, 41%);
+}
+
+.payment-btn:focus {
+  box-shadow: none;
+  outline: 2px dotted var(--primary-clr-900) !important;
+}
+
+/* === Footer === */
+#Footer {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.noFooter__Margin {
+  margin-top: 0 !important;
+}
+
+#footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.mainFooter {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0 2rem;
+  background: linear-gradient(
+    to right,
+    var(--primary-clr-500),
+    var(--primary-clr-300)
+  );
+}
+
+.footer__wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#footer__logo {
+  display: block;
+  background: url("./g-img/footer__logo.png") no-repeat center;
+  width: 100px;
+  height: 72px;
+}
+
+.footerNav__list {
+  list-style: none;
+  width: 50%;
+}
+
+.footerNav__link {
+  color: var(--primary-clr-100);
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+.footerNav__link:hover {
+  color: var(--primary-clr-700);
+}
+
+.footerContent_1 {
+  width: 350px;
+}
+
+.footer__heading {
+  font-size: 1.4rem;
+}
+
+/* == Scroll up == */
+#btnScrollToTop {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+
+#footer__logo:focus,
+.donation-btn:focus {
+  outline: 2px dotted var(--primary-clr-100);
+}
+
+.fa-arrow-circle-up:hover {
+  color: var(--primary-clr-500);
+}
+
+/* ========== Meet the Team =========== */
+/* === Footer === */
+.scrollUp {
+  position: fixed;
+  bottom: 2%;
+  right: 0.7%;
+  border: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in;
+}
+
+.scrollUp:hover {
+  opacity: 1;
+}
+
+.scrollUp:focus {
+  outline: 2px dotted var(--primary-clr-900);
+}
+
+.bi-arrow-up-circle-fill {
+  font-size: 2.5rem;
+  color: var(--accent-clr-900) !important;
+  transition: 200ms ease-in;
+}
+
+#meetTeam {
+  width: 100%;
+  padding: 2rem 2rem 6rem;
+}
+
+.boardMember__Wrapper {
+  display: flex;
+}
+
+.meet__Wrapper {
+  max-width: 100%;
+}
+
+.meetTeam__Wrap {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.boardMember__h3 {
+  font-family: var(--primary-ff);
+}
+
+.leaderShip__h2 {
+  text-align: center;
+  background: var(--primary-clr-500);
+  padding: 2rem 0;
+  margin: 3rem 0 4rem;
+  font-family: var(--secondary-ff);
+  color: var(--primary-clr-100);
+}
+
+.board__Members {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  margin: 0 auto;
+}
+
+.boardMember__list {
+  line-height: 1.7;
+}
+
+.Trustees__List {
+  margin-right: 4rem;
+}
+
+#meetTeam__Img {
+  background: rgba(0, 0, 0, 0.2)
+    url("./g-img/The-Gilbert-Residence-Senior-Living-Community-Ypsilanti-MI-Photo-a.webp")
+    no-repeat center;
+  background-blend-mode: overlay;
+  max-width: 675px;
+  min-height: 512px;
+  box-shadow: 0 0 0.3em var(--primary-clr-900);
+}
+
+#boardMember__italic {
+  font-style: italic;
+}
+
+.meetTeam__heading {
+  color: var(--primary-clr-100);
+  font-size: 1.7rem;
+  width: 675px;
+  font-family: var(--secondary-ff);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem 0;
+}
+
+.teamMember__Img {
+  margin-right: 1rem;
+  border-radius: 1em;
+  box-shadow: 0 0 0.3em var(--primary-clr-100);
+  max-width: 80px;
+  min-height: 120px;
+}
+
+.team__col {
+  background: var(--accent-clr-200);
+  box-shadow: 1px 2px 0.2em var(--primary-clr-500);
+  outline: 3px inset var(--primary-clr-500);
+  padding: 2rem;
+}
+
+.leadership__Image {
+  width: 80px;
+  height: 120px;
+  border-radius: 2em;
+  margin-bottom: 0.7em;
+  box-shadow: 0 0 0.1em var(--primary-clr-900);
+}
+
+.leadership__Name {
+  font-family: var(--primary-ff);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.leadership__Title {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.leadership__Email {
+  color: var(--primary-clr-500);
+}
+
+.leadership__Email:hover {
+  color: var(--primary-clr-500);
+}
+
+.accordion-button {
+  background: none !important;
+  color: var(--primary-clr-900) !important;
+}
+
+.accordion-button:focus {
+  background: none;
+  box-shadow: none;
+  color: var(--primary-clr-900);
+}
+
+/* === BreadCrumbs === */
+.breadcrumb__Nav {
+  background: var(--accent-clr-200);
+}
+
+.breadcrumb {
+  margin-left: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.breadcrumb__link {
+  color: var(--primary-clr-500) !important;
+  text-decoration: none;
+}
+
+.active {
+  color: var(--primary-clr-500) !important;
+}
+
+/* ====== Privacy Policy ====== */
+.privacy {
+  box-shadow: 0 0 0.1em var(--primary-clr-900);
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.privacy__span {
+  color: hsl(240, 80%, 50%);
+}
+
+#privacy__h1 {
+  padding-bottom: 0.7rem;
+  color: var(--primary-clr-500);
+}
+
+.privacy__h3 {
+  margin-top: 2rem;
+}
+
+.privacyLetter__Info {
+  margin-bottom: -0.3rem;
+}
+
+/* === Contact Form === */
+.contactForm__Wrapper {
+  position: relative;
+  width: 100%;
+  margin: 3rem 0 4rem;
+}
+
+#contact__Form {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm-btn {
+  background: var(--primary-clr-500) !important;
+  color: var(--primary-clr-100) !important;
+  padding: 0.7em 1.7em;
+}
+
+.contactForm-btn:hover {
+  color: var(--primary-clr-100) !important;
+  background-color: hsl(201, 91%, 41%) !important;
+}
+
+.contactForm__h3 {
+  background: var(--primary-clr-500);
+  color: #fff;
+  text-align: center;
+  font-family: var(--secondary-ff);
+  letter-spacing: 1px;
+  padding: 0.5em 0;
+}
+
+.contactForm__info {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.contactForm__top {
+  margin-top: 1.2rem;
+}
+
+.contactForm__info a {
+  color: #fff;
+  transition: 200ms linear;
+}
+
+.contactForm__info a:hover {
+  color: var(--primary-clr-700);
+}
+
+.contact__Input:focus {
+  box-shadow: none;
+  outline: 2px solid var(--primary-clr-500);
+}
+
+#status {
+  width: 100%;
+  max-width: 670px;
+  margin: 1rem auto 0;
+  padding: 0.5em;
+  text-align: center;
+  color: var(--primary-clr-500);
+  border-radius: 0.5em;
+}
+
+#status.success {
+  background: rgb(197, 235, 140);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background: hsl(0, 80%, 43%);
+  color: var(--primary-clr-100);
+  animation: status 4s ease forwards;
+}
+
+#status2 {
+  width: 80%;
+  max-width: 670px;
+  margin: 2rem auto 0;
+  padding: 0.5em;
+  text-align: center;
+  color: var(--primary-clr-500);
+  border-radius: 0.5em;
+}
+#status2.success {
+  background: rgb(197, 235, 140);
+  /* animation: status 4s ease forwards; */
+}
+
+#status2.error {
+  background: hsl(0, 80%, 43%);
+  color: var(--primary-clr-100);
+  /* animation: status 4s ease forwards; */
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* ==== Assisted Living Community Section ==== */
+#assistedLiving {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.parallax {
+  position: relative;
+  background: url("./g-img/holdingHands.webp") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.parallax2 {
+  position: relative;
+  background: url("./g-img/library.webp") no-repeat top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.parallax3 {
+  position: relative;
+  background: url("./g-img/bingo.webp") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.parallax4 {
+  position: relative;
+  background: url("./g-img/holdingHands.webp") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.parallax__heading {
+  position: absolute;
+  background: rgba(28, 114, 160, 0.7);
+  color: var(--primary-clr-100);
+  font-family: var(--secondary-ff);
+  transform: translateY(-50%);
+  padding: 1rem;
+  top: 50%;
+}
+
+.floor__Plan {
+  background: var(--primary-clr-500);
+  padding-top: 2rem;
+}
+
+.memoryCare__Floor {
+  padding-bottom: 5rem;
+}
+
+.list__Wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.list__Heading {
+  list-style: none;
+  margin-left: -3rem;
+}
+
+.list__Heading3 {
+  margin-left: -1rem;
+  list-style: none;
+  text-align: left;
+}
+
+.list__Wrap > * {
+  color: var(--primary-clr-100);
+}
+
+.list__1 {
+  margin-right: 8rem;
+}
+
+.list__1,
+.list__2 {
+  line-height: 1.7;
+}
+
+.list__3 > * {
+  color: var(--primary-clr-100);
+}
+
+.blueprint {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.suite__title,
+.bay__title,
+.standard__title,
+.court__title {
+  background: var(--accent-clr-200);
+  color: var(--primary-clr-500);
+  font-size: 1.2rem;
+  font-family: var(--secondary-ff);
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.blueprintImage__Wrap {
+  margin-bottom: 3rem;
+}
+
+.suite__title {
+  max-width: 302px;
+  text-align: center;
+}
+
+.bay__title {
+  max-width: 290px;
+  text-align: center;
+}
+
+.standard__title {
+  max-width: 235px;
+  text-align: center;
+}
+
+.court__title {
+  max-width: 250px;
+  text-align: center;
+}
+
+/* room images */
+.doubleSuite__Image {
+  max-width: 300px;
+  min-height: 200px;
+}
+
+.bay__Image {
+  max-width: 350px;
+  min-height: 200px;
+}
+
+.standard__Image {
+  max-width: 300px;
+  height: 370px;
+}
+
+.court__Image {
+  max-width: 250px;
+}
+
+.roomHeading__span {
+  color: var(--primary-clr-100);
+}
+
+.span__1 {
+  padding-right: 7rem;
+}
+
+/* Typography */
+.blueprint__text {
+  padding: 0 3rem;
+}
+
+.blueprint__h2 {
+  color: hsl(45, 66%, 64%);
+  font-family: var(--secondary-ff);
+  text-align: center;
+  margin: 1rem 0 1.7rem;
+}
+
+.para {
+  margin-bottom: 2rem;
+  color: var(--primary-clr-100);
+}
+
+.blueprint__para {
+  max-width: 800px;
+  text-align: center;
+  color: var(--primary-clr-100);
+  margin: 0 auto 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.nursingCare__p2 {
+  max-width: 800px;
+  color: var(--primary-clr-100);
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto 4rem;
+}
+
+/* Memory Care */
+.memoryCare {
+  justify-content: space-around;
+}
+
+.memoryCare__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.memoryCare__Element {
+  width: 45%;
+}
+
+.memoryCare__h3 {
+  color: hsl(45, 66%, 64%);
+  max-width: 83%;
+  margin: 0 auto 0.5em;
+}
+
+.list3__h3 {
+  color: hsl(45, 66%, 64%);
+}
+
+.bottomList__Wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.graceHall__Fact {
+  padding: 2rem 0 3rem;
+}
+
+.gracehallFact__h2 {
+  color: hsl(45, 66%, 64%);
+  text-align: center;
+}
+
+.gracehallFact__text {
+  color: var(--primary-clr-100);
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* === Nursing care === */
+#nursingCare {
+  margin-bottom: 4rem;
+}
+
+.needsText__Wrap {
+  width: 47%;
+}
+
+.needsLi__heading {
+  list-style: none;
+}
+
+.needs__h3 {
+  color: hsl(45, 66%, 64%);
+  margin-right: 1rem;
+}
+
+.needs__Text {
+  font-size: 1.1rem;
+}
+
+/* wait list form */
+#waitList__Form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.waitlistForm__Wrap {
+  margin-bottom: 4rem;
+}
+
+.form__Divider {
+  border-bottom: 1px solid var(--accent-clr-900);
+}
+
+.waitlistForm__h3 {
+  color: var(--primary-clr-500);
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.waitlistForm__h3 {
+  font-family: var(--secondary-ff);
+}
+
+.applicant__h3 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.waitlist__Element input:focus {
+  box-shadow: none;
+}
+
+input[type="radio"]:focus,
+input[type="email"]:focus,
+input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+textarea {
+  box-shadow: none !important;
+}
+
+.nursingRequest-btn {
+  margin-top: 1.5rem;
+}
+
+/* Services and Amenities */
+.amenties__body {
+  background: var(--accent-clr-200);
+}
+
+.amenitie__h1 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  background: var(--primary-clr-500);
+  color: var(--primary-clr-100);
+}
+
+/* === Activities Section === */
+.activities__body {
+  background: var(--accent-clr-200);
+}
+
+.content__Wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 6rem;
+}
+
+.card__Wrap {
+  max-width: 800px;
+  box-shadow: 1px 2px 0.3em var(--accent-clr-300);
+}
+
+.card__Content {
+  padding: 3rem 2rem;
+  line-height: 1.7;
+  font-family: var(--secondary-ff);
+  background: var(--accent-clr-100);
+  color: var(--accent-clr-900);
+}
+
+/* === Photo Gallery === */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-col {
+  width: auto;
+  height: auto;
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+.img-gallery img {
+  max-width: 206px;
+  min-height: 206px;
+  border-radius: 0.7em;
+  box-shadow: 0 0 0.2em var(--accent-clr-900);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.img-gallery img:hover {
+  transform: rotate(-10deg) scale(0.9);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-img img {
+  width: 90%;
+  max-width: 250px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 20px;
+  color: var(--primary-clr-100);
+  cursor: pointer;
+}
+
+/* === PageNation Navigation === */
+#pageNation {
+  margin: 3rem 0;
+}
+
+#corona__Heading {
+  font-size: 2rem;
+  padding: 1.3rem;
+}
+
+.corona__h2 {
+  margin-top: 2rem;
+}
+
+.corona__h2,
+.safeClient__h2 {
+  padding: 1rem 0 1rem 1rem;
+  color: var(--primary-clr-100);
+  background: var(--primary-clr-500);
+  font-size: 1.5rem;
+}
+
+.corona__text {
+  max-width: 1000px;
+  padding: 3rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.7;
+  color: var(--primary-clr-100);
+}
+
+.coronaCard__body {
+  background: var(--primary-clr-500);
+}
+
+.content__Card {
+  padding: 2rem;
+}
+
+.safeClient__h2 {
+  margin-bottom: 1rem;
+}
+
+.coronaCard__title {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  color: var(--primary-clr-500);
+}
+
+.list__steps {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.coronaList__item {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* === Media Queries === */
+@media (max-width: 992px) {
+  /* Navigation */
+
+  #corona__saftey {
+    display: none;
+  }
+
+  .hover__state:focus {
+    border-bottom: 2px solid var(--primary-clr-300) !important;
+    color: var(--primary-clr-300) !important;
+  }
+
+  .contact__Element {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__message {
+    display: none;
+  }
+
+  #donation--btn-id {
+    color: var(--primary-clr-100) !important;
+  }
+
+  /* === Video Tour === */
+  .tour__Wrap {
+    flex-direction: column;
+  }
+
+  #videoTour {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 2.5rem;
+  }
+
+  .videoTour__h2 {
+    text-align: center;
+  }
+
+  .videoTour___text {
+    max-width: 600px;
+  }
+
+  .boardMember__Wrapper {
+    flex-direction: column;
+  }
+
+  .board__Members {
+    margin-top: 2rem;
+  }
+
+  .meet__Wrapper {
+    margin: 0 auto;
+  }
+
+  .corona__h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link,
+  .dropdown__link,
+  .dropdown__icon {
+    color: var(--primary-clr-100) !important;
+  }
+
+  .awards__list {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  #carouselExampleControls {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .awards {
+    position: static;
+    text-align: center;
+    width: 100%;
+    min-width: 200px;
+    padding: 2rem;
+  }
+
+  #awards__heading {
+    margin: 1.5rem 0 2rem;
+  }
+
+  .service-btn {
+    width: 200px;
+    margin: 0 auto 2rem;
+  }
+
+  /* === Offered Services == */
+  .offerServices__wrap {
+    flex-direction: column;
+  }
+
+  .offeredService__card {
+    width: 80% !important;
+    margin: 0 auto 1.3rem;
+  }
+
+  /* == About Us/ Mission & Vision Section === */
+  .missionAbout__Wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mission--col {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  .aboutUs__col {
+    max-width: 100%;
+    padding-right: 1em;
+  }
+
+  .mission--col {
+    padding: 2em;
+  }
+
+  /* Video Tour Section */
+  .videoCol__2 {
+    padding-left: 0;
+  }
+
+  .scrollUp {
+    right: 2%;
+    opacity: 1;
+  }
+
+  /* assisted living */
+  .list__1 {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__col {
+    width: 85%;
+  }
+
+  .memoryCare__Element {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* memory care */
+  .memoryCare__text {
+    flex-direction: column;
+  }
+
+  /* == Nursing Care == */
+  #nursingList__Wrap {
+    flex-direction: column;
+  }
+
+  .needsText__Wrap {
+    width: 100%;
+    padding: 1.5rem 0 4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #videoTour__section {
+    padding: 2rem 0 4rem;
+  }
+
+  #videoTour {
+    margin-bottom: 0;
+  }
+
+  .footer__wrap {
+    flex-direction: column;
+  }
+
+  .footerContent_1 {
+    padding: 0 0.5em 0 2em;
+    margin-top: 1rem;
+  }
+
+  /* Assisted living */
+  .list__Wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .list__1 {
+    margin-right: 0;
+  }
+
+  .blueprint__text {
+    padding: 0 1rem;
+  }
+
+  .scrollUp {
+    display: none;
+  }
+}

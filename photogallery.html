@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Gilbert Residence picture gallery" />
+        <title>Photo Gallery &#8211 The Gilbert Residence</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="shortcut icon" href="./g-img/favicon-16x16.png" type="image/png" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+
+    <body class="activities__body">
+        <header id="masthead">
+            <!-- Coronavirus Banner -->
+            <div aria-label="learn how gilbert Residence is keeping clients safe amid the COVID-19 pandemic" class="py-3" id="corona__saftey" role="banner">
+               <div class="container-xl px-5">
+                <p class="banner__text text-center">
+                    During this COVID-19 pandemic, The Gilbert Residence and our Staff top priority is protecting the most vulnerable population during this period of uncertainty.
+                    <a href="./corona.html" class="banner__link">Learn more about how the Gilbert Residence is keeping clients safe amid the COVID-19 pandemic</a>
+                </p>
+                <i class="bi bi-x close--btn" id="close"></i>
+               </div>
+            </div>
+
+            <!-- Top Accent Navigation-->
+            <div aria-label="Top Accent Navigation" id="accentTop__Navigation" class="navbar navbar-expand-lg accent__clr navbar-dark py-2" role="navigation">
+                <div class="container-xl">
+                    <div class="accentContact_Wrap px-1">
+                        <div class="contact__col d-flex justify-content-between align-items-center">
+                            <div class="contact__Element">
+                                <a href="tel:+7344829498" class="text-white accentContact__links me-4">
+                                    <i class="bi bi-phone text-white me-1"></i>
+                                    Schedule a Tour
+                                </a>
+            
+                                <a href="mailto:info@gilbertresidence.com " class="text-white accentContact__links">
+                                    <span class="contact__message">Email us: </span>
+                                    <i class="bi bi-envelope text-white me-1"></i>
+                                    info@gilbertresidence.com
+                                </a>
+                            </div>
+                            <!-- Social Media -->
+                            <div class="contact__Element socialLink__list">
+                                <div>
+                                    <span class="text-white ms-4">Follow us @:</span>
+                                </div>
+                                <div>
+                                    <a aria-label="Gilbert Residence facebook link" href="#" tabindex="0">
+                                        <i class="bi bi-facebook text-white fs-5 ms-5 social__link" title="Facebook"></i>
+                                    </a>
+                                    <a aria-label="Gilbert Residence twitter link" href="#" tabindex="0">
+                                        <i class="bi bi-twitter text-white fs-5 ms-3 social__link" title="Twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Navigation -->
+            <nav aria-label="Primary Navigation" id="primary__Navigation" class="navbar navbar-expand-lg navbar-dark">
+
+                <div class="container-xl ">
+                    <a aria-label="Gilbert Residence Logo" href="./index.html" class="navbar-brand">
+                        <img src="./g-img/gilbert__logo.png" alt="gilbert residence logo" class="topNavigation__Logo" >
+                    </a>
+
+                    <!-- Toggle Menu -->
+                    <button id="toggle__style" class="toggle__menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-labelledby="toggleMenu">
+                        <span><i class="bi bi-list toggleMenu-icon text-white fs-1 border-0"></i></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 class="offCanvas__h3" id="offcanvasRightLabel">Gilbert Residence</h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link hover__state">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">About us</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Drop Down Menu -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./index.html">Our History</a></li>
+                                        <li><a class="dropdown-item" href="./index.html">Our Mission and Vision</a></li>
+                                        <li><a class="dropdown-item" href="./team.html">Meet the Team</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Our Services</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#offered__services">What we Offer</a></li>
+                                        <li><a class="dropdown-item" href="./assisted.html">Assisted Living Care</a></li>
+                                        <li><a class="dropdown-item" href="./memorycare.html">Memory Care</a></li>
+                                        <li><a class="dropdown-item" href="./nursing.html">Nursing Care</a></li>
+                                        <li><a class="dropdown-item" href="servicesAmenities.html">Services & Amenities</a></li>
+                                        <li><a class="dropdown-item" href="./a">Activities</a></li>
+                                    </ul>
+                                </li>
+                                
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Gallery</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./photogallery.html">Picture Gallery</a></li>
+                                        <li><a class="dropdown-item" href="./index.html">Video Tour</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="dropdown__link hover__state">Contact us</a>
+                                    <a href="#" class="dropdown-toggle dropdown-toggle-split dropdown__icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                    </a>
+                                    <!-- Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./contact.html">Request Information</a></li>
+                                        <li><a class="dropdown-item" href="https://gilbertresidence.iapplicants.com/" rel="noopener" target="_blank">Careers</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a aria-label="Search " href="#" role="search" class="nav-link hover__state">
+                                        Search 
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="https://www.paypal.com/donate?token=Lu1XF0szm2p540j85sbePRD5eZYQb8T47vD2JeLJGilHsLtq8LjfBxjbrlI1_QjMgbUi4fXMp33Qd0av" id="donation--btn-id" class="nav-link btn btn-md donation-btn mt-sm-2 mt-lg-0" target="_blank">Donations</a>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb" class="breadcrumb__Nav pt-2">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="breadcrumb__link" href="./index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Activities</li>
+                </ol>
+              </nav>
+        </header>
+
+        <!-- Photo gallery  -->
+        <section aria-label="gilbert residence activities section" id="activity__Section">
+            <div class="container-xl">
+                <div class="parallax4">
+                    <h1 class="parallax__heading px-5">Picture Gallery</h1>
+                </div>
+
+                <div class="full-img" id="fullImg__Box">
+                    <img src="../g-img/fb-img/img1.webp" alt="mage of gilbert resident on veterans day" id="fullImg">
+                    <span id="close-Picture"">X</span>
+                </div>
+
+                <div class="img-gallery py-5">
+                  
+                    <div class="gallery-row">
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img1.webp"  alt="Image of gilbert resident on veterans day" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img2.webp" alt="Image of gilbert resident on veterans day " tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img3.webp" alt="Image of gilbert residents on veterans day" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img4.webp" alt="Image of gilbert residents on veterans day" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img5.webp" alt="Image of marching band perform for residents of gilbert residence" tabindex="0" />
+                        </div>
+
+                        <!-- Column Two -->
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img6.webp" alt="Image of gilbert resident on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img7.webp" alt="Image of gilbert resident on halloween " tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img8.webp" alt="Image of gilbert residents on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img9.webp" alt="Image of gilbert residents on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img10.webp" alt="Image of gilbert residents on halloween" tabindex="0" />
+                        </div>
+
+                        <!-- Column Three -->
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img11.webp" alt="Image of gilbert resident and staff on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img12.webp" alt="Image of gilbert resident staff  on halloween " tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img13.webp" alt="Image of gilbert resident blowing out her birthday candles" tabindex="0"/>
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img14.webp" alt="Image of gilbert resident smiling preparing to enjoy her birthday cake" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img15.webp" alt="Image of gilbert resident blowing out her birthday candles enjoying her birthday with gilbert residence staff" tabindex="0" />
+                        </div>
+
+                        <!-- Column Four -->
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img16.webp"  lt="Image of gilbert resident and her family on halloween" tabindex="0"/>
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img17.webp" alt="Image of gilbert resident and her family on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img18.webp" alt="Image of gilbert resident staff on halloween dressed as a cat posing for a picture" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img19.webp" alt="Image of gilbert resident with a boo mask on halloween" tabindex="0" />
+                        </div>
+                        <div class="gallery-col">
+                            <img class="photo-img" src="./g-img/fb-img/img20.webp" alt="Image of winning department grace hall from gilbert resident pumpkin decorating contest" tabindex="0" />
+                        </div>
+                    </div>
+                
+
+                <!-- Page Nation -->
+                <nav aria-label="picture gallery page navigation" id="pageNation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item active" aria-current="page"><a class="page-link new__clr" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link new__clr" href="./photogallerypages/photogallerypg2.html">2</a></li>
+                      <li class="page-item">
+                        <a class="page-link new__clr" href="./photogallerypages/photogallerypg2.html">Next</a>
+                      </li>
+                    </ul>
+                </nav>
+               
+            </div>
+        </section>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c72a0" fill-opacity="1" d="M0,192L48,160C96,128,192,64,288,42.7C384,21,480,43,576,85.3C672,128,768,192,864,208C960,224,1056,192,1152,154.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        
+        <!-- Footer -->
+        <footer id="Footer" class="noFooter__Margin">
+            <div class="mainFooter">
+                <a aria-label="gilbert residence footer logo" href="./index.html" id="footer__logo"></a>
+                <div class="footer__wrap">
+                    <nav aria-label="footer navigation" id="footer__nav">
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Our Family Care Services</h1>
+                            <li class="footerNav__item">
+                                <a href="./memorycare.html" class="footerNav__link">Memory Care</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./nursing.html" class="footerNav__link">Nursing Care</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./assisted.html" class="footerNav__link">Assisted Living Care</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Helpful Resources</h1>
+                            <li class="footerNav__item">
+                                <a href="https://gilbertresidence.iapplicants.com/" class="footerNav__link" rel="noopener" target="_blank" title="Careers">Careers</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./privacy.html" class="footerNav__link">Privacy Policy</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./contact.html" class="footerNav__link">Contact us</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footerNav__list">
+                            <h1 class="text-white footer__heading">Site Links</h1>
+                            <li class="footerNav__item">
+                                <a href="servicesAmenities.html" class="footerNav__link">Services & Amenities</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="./activities.html" class="footerNav__link">Activities</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footerContent_1">
+                        <h1 class="text-white footer__heading">Non-Discrimination Policy</h1>
+                        <p class="text-white">
+                            The Gilbert Residence complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age,    disability, sex, and protected veteran status.
+                        </p>
+                        <p class="text-white" role="contentinfo">
+                            © 2021 The Gilbert Residence Health System, Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                    
+                    <!-- Scroll Button -->
+                    <button aria-label="scroll up" type="button" class="scrollUp">
+                        <i class="bi bi-arrow-up-circle-fill scrollUp"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+
+    </body>
+</html>
