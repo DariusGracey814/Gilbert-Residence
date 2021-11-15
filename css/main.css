@@ -280,27 +280,18 @@ img {
 }
 
 #smileImg {
-  display: block;
-  background: url("./g-img/smiling.webp") no-repeat center;
-  background-size: cover;
   max-width: 1280px;
-  min-height: 529px;
+  min-height: 505px;
 }
 
 #walkImg {
-  display: block;
-  background: url("./g-img/inside.webp") no-repeat center;
-  background-size: cover;
   max-width: 100%;
   min-height: 529px;
 }
 
 #thumbsUpImg {
-  display: block;
-  background: url("./g-img/thumbsup.webp") no-repeat center;
-  background-size: cover;
   max-width: 100%;
-  min-height: 529px;
+  min-height: 515px;
 }
 
 #gilbert__Facility {
