@@ -281,7 +281,7 @@ img {
 
 #smileImg {
   display: block;
-  background: url("/g-img/smiling.webp") no-repeat center;
+  background: url("./g-img/smiling.webp") no-repeat center;
   background-size: cover;
   max-width: 1280px;
   min-height: 529px;
@@ -289,7 +289,7 @@ img {
 
 #walkImg {
   display: block;
-  background: url("/g-img/inside.webp") no-repeat center;
+  background: url("./g-img/inside.webp") no-repeat center;
   background-size: cover;
   max-width: 100%;
   min-height: 529px;
@@ -297,7 +297,7 @@ img {
 
 #thumbsUpImg {
   display: block;
-  background: url("/g-img/thumbsup.webp") no-repeat center;
+  background: url("./g-img/thumbsup.webp") no-repeat center;
   background-size: cover;
   max-width: 100%;
   min-height: 529px;
@@ -574,7 +574,7 @@ img {
 
 #footer__logo {
   display: block;
-  background: url("/g-img/footer__logo.png") no-repeat center;
+  background: url("../g-img/footer__logo.png") no-repeat center;
   width: 100px;
   height: 72px;
 }
@@ -699,7 +699,7 @@ img {
 
 #meetTeam__Img {
   background: rgba(0, 0, 0, 0.2)
-    url("/g-img/The-Gilbert-Residence-Senior-Living-Community-Ypsilanti-MI-Photo-a.webp")
+    url("./g-img/The-Gilbert-Residence-Senior-Living-Community-Ypsilanti-MI-Photo-a.webp")
     no-repeat center;
   background-blend-mode: overlay;
   max-width: 675px;
@@ -940,7 +940,7 @@ img {
 
 .parallax {
   position: relative;
-  background: url("/g-img/holdingHands.webp") no-repeat center;
+  background: url("./g-img/holdingHands.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
@@ -948,14 +948,14 @@ img {
 
 .parallax2 {
   position: relative;
-  background: url("/g-img/library.webp") no-repeat top;
+  background: url("./g-img/library.webp") no-repeat top;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
 }
 .parallax3 {
   position: relative;
-  background: url("/g-img/bingo.webp") no-repeat bottom;
+  background: url("./g-img/bingo.webp") no-repeat bottom;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
@@ -963,7 +963,7 @@ img {
 
 .parallax4 {
   position: relative;
-  background: url("/g-img/holdingHands.webp") no-repeat center;
+  background: url("./g-img/holdingHands.webp") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
